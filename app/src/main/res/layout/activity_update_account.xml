@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateAccount"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:gravity="center">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/update_imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="30dp"
+        android:layout_gravity="center"
+        android:src="@drawable/user"/>
+
+    <EditText
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/button"
+    android:padding="10dp"
+    android:drawableLeft="@drawable/ic_person_white"
+    android:textSize="18sp"
+    android:drawablePadding="5dp"
+    android:hint="Name"
+    android:textColorHint="@color/white"
+    android:textColor="@color/white"
+        android:inputType="text"
+        android:id="@+id/update_etName"/>
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button"
+        android:padding="10dp"
+        android:drawableLeft="@drawable/ic_email_white"
+        android:textSize="18sp"
+        android:drawablePadding="5dp"
+        android:hint="Email"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:inputType="textEmailAddress"
+        android:enabled="false"
+        android:id="@+id/update_etEmail"/>
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button"
+        android:padding="10dp"
+        android:drawableLeft="@drawable/ic_home_white"
+        android:textSize="18sp"
+        android:drawablePadding="5dp"
+        android:hint="Address"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:inputType="textMultiLine"
+        android:id="@+id/update_etAddress" />
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button"
+        android:padding="10dp"
+        android:drawableLeft="@drawable/ic_phone_white"
+        android:textSize="18sp"
+        android:drawablePadding="5dp"
+        android:hint="Phone"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:id="@+id/update_etPhone"
+        android:inputType="number"/>
+
+    <Button
+        android:id="@+id/update_updateBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/buttonsbackground"
+        android:onClick="update"
+        android:paddingRight="10dp"
+        android:text=" ✓"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/lime"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+
+</LinearLayout>

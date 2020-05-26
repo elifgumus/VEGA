@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".SalesActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="25dp"
+        android:text="Adress :"
+        android:id="@+id/adtv"
+        android:textColor="#000"
+        android:textSize="18sp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/adtv"
+        android:hint="Adress"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="25dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:id="@+id/sales_addressEt"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@id/sales_addressEt"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="25dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/sales_goodsRv"
+        android:background="@color/white"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Price :"
+        android:textColor="#000"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="25dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/sales_goodsRv"
+        android:textSize="18sp"
+        android:id="@+id/sales_totalPriceTv"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="#000"
+        android:text="Payment :"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_below="@id/sales_totalPriceTv"
+        android:id="@+id/pymnttv"
+        android:layout_marginLeft="10dp"/>
+
+    <EditText
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/pymnttv"
+        android:layout_marginStart="17dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginBottom="-7dp"
+        android:layout_toEndOf="@id/pymnttv"
+        android:layout_toRightOf="@id/pymnttv"
+        android:drawableLeft="@drawable/ic_check_black_24dp"
+        android:enabled="false"
+        android:text="At the door" />
+
+    <Button
+        android:id="@+id/salses_buyBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/pymnttv"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="11dp"
+         android:background="@drawable/button"
+        android:layout_marginBottom="-8dp"
+        android:onClick="buy"
+        android:text="buy"
+        android:textColor="@color/white"/>
+
+</RelativeLayout>

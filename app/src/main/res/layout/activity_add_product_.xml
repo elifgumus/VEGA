@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".AddProduct_Activity"
+    android:orientation="vertical">
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical">
+           <ImageView
+               android:layout_width="250dp"
+               android:layout_height="250dp"
+               android:src="@drawable/pickimage"
+               android:layout_gravity="center"
+               android:layout_marginTop="10dp"
+               android:id="@+id/addproduct_ImageView"
+               android:onClick="openGallery"/>
+           <EditText
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="15dp"
+               android:layout_marginEnd="15dp"
+               android:id="@+id/addproduct_productNameET"
+               android:hint="Product Name"
+               android:layout_marginTop="20dp"
+               android:inputType="text"/>
+           <EditText
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="10dp"
+               android:layout_marginStart="15dp"
+               android:layout_marginEnd="15dp"
+
+               android:id="@+id/addproduct_priceET"
+               android:hint="Price"
+               android:inputType="number"/>
+           <EditText
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="10dp"
+               android:layout_marginStart="15dp"
+               android:layout_marginEnd="15dp"
+               android:id="@+id/addproduct_quantityET"
+               android:hint="Quantity"
+               android:inputType="number"/>
+           <EditText
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="10dp"
+               android:layout_marginStart="15dp"
+               android:layout_marginEnd="15dp"
+               android:id="@+id/ddproduct_typeEt"
+               android:hint="Category Type" />
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="10dp"
+               android:layout_marginTop="10dp"
+               android:layout_marginStart="15dp"
+               android:layout_marginEnd="15dp"
+               android:text=" Note : Product type must entered like one of
+ these : \n Clothes/clothes \n Electronics/electronics
+ \n Cosmetics/cosmetics \n Market/market
+ \n Home and life/home and life"
+               android:textColor="#FF0000"
+               android:textStyle="bold" />
+
+           <Button
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="40dp"
+               android:layout_marginEnd="40dp"
+               android:background="@drawable/button"
+               android:text="Add"
+               android:layout_marginTop="10dp"
+               android:onClick="AddProduct"
+               android:layout_marginBottom="10dp"/>
+       </LinearLayout>
+   </ScrollView>
+</LinearLayout>

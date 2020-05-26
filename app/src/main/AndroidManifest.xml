@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.project">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logooo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SalesActivity"></activity>
+        <activity android:name=".Home" />
+        <activity android:name=".Market" />
+        <activity android:name=".Cosmetic" />
+        <activity android:name=".Electronic" />
+        <activity android:name=".Clothes" />
+        <activity android:name=".AllProducts" />
+        <activity android:name=".ProductPageActicity" />
+        <activity android:name=".AddProduct_Activity" />
+        <activity android:name=".UpdateAccount" />
+        <activity android:name=".HomeFragment" />
+        <activity android:name=".BottomNavigation" />
+        <activity android:name=".ForgotPassword" />
+        <activity android:name=".SignInActivity" />
+        <activity
+            android:name=".SplashScreen"
+            android:theme="@style/SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme" />
+    </application>
+
+</manifest>
